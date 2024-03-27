@@ -1,0 +1,37 @@
+header{
+    border: 2px dashed black;
+}
+
+header ul{
+    text-align: right;
+}
+
+header li{
+    display: inline;
+}
+
+figure{
+    border: 2px dashed black;
+    margin: 20px auto;
+}
+
+section{
+    border: 2px dashed black;
+    margin: 20px auto;
+}
+
+footer{
+    border: 2px dashed black;
+    margin: 20px auto;
+}
+
+.side-box{
+    width: 200px;
+    height: 100px;
+    border-right: 5px solid black;
+    text-align: right;
+}
+
+.content-box{
+    text-align: right;
+}
