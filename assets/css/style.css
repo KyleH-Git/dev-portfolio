@@ -3,6 +3,7 @@ body{
     background-color: rgb(116, 115, 115);
     font-family: Arial, Helvetica, sans-serif, serif;
 }
+
 header{
     background-color: darkgray;
     display: flex;
@@ -14,25 +15,18 @@ header h1{
     align-self: center;
 }
 
-
-
-section{
-    border: 2px dashed black;
-    margin: 20px auto;
-}
-
+section, 
 footer{
-    border: 2px dashed black;
     margin: 20px auto;
 }
 
 .header-img{
-    border: 2px dashed black;
-    margin: 20px auto;
+    background-image: url(../img/wip.png);
+    background-size: cover;
+    min-height: 25vh;
 }
 
 .side-box{
-    border-right: 5px solid black;
     text-align: right;
     width: 20%;
     height: 150px;
@@ -48,20 +42,21 @@ footer{
 
 .content-text{
     text-align: left;
-    border: 2px dashed black;  
     width: 70%;
     margin: 20px 15% 20px 20px;
+    border-left: 5px solid black;
+    padding: 0 0 0 15px;
 }
 
 .content-cards{
     text-align: left;
-    border: 2px dashed black;  
     margin: 20px 50px 50px 20px;
     width: 75%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    border-left: 5px solid black;
 }
 
 .card-column{
@@ -79,14 +74,16 @@ footer{
     height: 46px;
 
 }
+
 .content-contact{
     text-align: left;
-    border: 2px dashed black;  
     width: 75%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-left: 5px solid black;
+    padding: 0 0 0 15px;
 }
 
 .content-subtext{
@@ -107,16 +104,12 @@ footer{
 
 .navbar-item{
     display: inline;
-    border: 2px dashed black;
-    justify-content: right;
-    text-decoration: none;
-    color: black;
-    margin: 0px 20px;
-}
-
-.card-column:active, 
-.card-column:active .card-header{
-
+    border: 4px solid black;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 6px 15px 6px 15px;
+    padding: 4px 15px 4px 15px;
 }
 
 .card-column:hover,
@@ -137,4 +130,18 @@ img{
     display: block;
     margin: 0 auto;
     width: 50%;
+}
+
+@media screen and (min-width: 768px){
+    ul{
+        display: block;
+    }
+
+    li{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
 }
