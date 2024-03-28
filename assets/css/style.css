@@ -14,10 +14,7 @@ header h1{
     align-self: center;
 }
 
-figure{
-    border: 2px dashed black;
-    margin: 20px auto;
-}
+
 
 section{
     border: 2px dashed black;
@@ -25,6 +22,11 @@ section{
 }
 
 footer{
+    border: 2px dashed black;
+    margin: 20px auto;
+}
+
+.header-img{
     border: 2px dashed black;
     margin: 20px auto;
 }
@@ -47,20 +49,36 @@ footer{
 .content-text{
     text-align: left;
     border: 2px dashed black;  
-    width: 75%;
-    margin: auto;
+    width: 70%;
+    margin: 20px 15% 20px 20px;
 }
 
 .content-cards{
     text-align: left;
     border: 2px dashed black;  
+    margin: 20px 50px 50px 20px;
     width: 75%;
-    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
+.card-column{
+    width: 400px;
+    height: 150px;
+    border: 4px solid rgb(8, 77, 2);  
+}
+
+.card-header{
+    position: relative;
+    border: 4px solid rgb(8, 77, 2);
+    margin: 60px 60px 0 -25px;
+    background: rgb(107, 209, 82);
+    width: 190px;
+    height: 46px;
+
+}
 .content-contact{
     text-align: left;
     border: 2px dashed black;  
@@ -71,6 +89,12 @@ footer{
     justify-content: center;
 }
 
+.content-subtext{
+    text-align: left;
+    font-weight: lighter;
+    font-size: 14px;
+    margin: 2px 25% 2px 25%;
+}
 .navbar{
     display: flex;
     background-color: rgb(22, 133, 68);
@@ -88,8 +112,23 @@ footer{
     text-decoration: none;
     color: black;
     margin: 0px 20px;
+}
+
+.card-column:active, 
+.card-column:active .card-header{
 
 }
+
+.card-column:hover,
+.card-column:hover .card-header{
+    border: 4px solid rgb(218, 140, 38);  
+    cursor: pointer;
+}
+
+.card-column:hover .card-header{
+    background: rgb(202, 115, 33);
+}
+
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
