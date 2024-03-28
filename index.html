@@ -9,42 +9,58 @@
 
     <body>
         <header>
-            <h1> My Portfolio</h1>
-            <nav>
+            <h1>My Portfolio</h1>
+            <nav class = "navbar">
                 <ul>
-                    <li>About Me</li>
-                    <li>Work</li>
-                    <li>Contact Me</li>
-                    <li>Resume</li>
+                    <li class = "navbar-item"><a href ="#About Me">About Me</a></li>
+                    <li class = "navbar-item"><a href ="#Work">Work</a></li>
+                    <li class = "navbar-item"><a href ="#Contact Me">Contact Me</a></li>
+                    <li class = "navbar-item"><a href ="#Resume">Resume</a></li>
                 </ul>
             </nav>
         </header>
 
         <figure>
-            <p class="content-box">art</p>
+            <img src="./assets/img/wip.png" alt="work in progress sign"/>
+            <p>art</p>
         </figure>
 
         <!-- About me -->
-        <section>
-            <p class="side-box">about <br>me</br></p>
-            <div class="content-box">
-                skills/exp
-            </div>
+        <section class = "container">            
+                <p id="About Me" class="side-box">About <br>Me</br></p>
+                <div class = "content-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, <br></br>
+                    
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>        
         </section>
 
         <!-- Work cards -->
-        <section>
-            <p class="side-box">work</p>
-            <div class="content-box">
-                <p>work cards</p>
-            </div>
+        <section class = "container">
+            <p id="Work" class="side-box">Work</p>      
+            <div class = "content-cards">    
+                <p >work card 1</p>
+                <p >work card 2</p>
+                <p >work card 3</p>
+                <p >work card 4</p>
+            </div> 
         </section>
 
         <!-- Contact information -->
-        <footer>
-            <p class="side-box">contact <br>me</br></p>
-            <div class="content-box">
-                <p>contact info</p>
+        <footer class = "container">
+            <p id="Contact Me" class="side-box">Contact <br>Me</br></p>
+            <div class="content-contact">
+                <nav class = "navbar">
+                    <ul>
+                        <li class = "navbar-item">Phone Number</li>
+                        <li class = "navbar-item">Email</li>
+                        <li class = "navbar-item">GitHub</li>
+                    </ul>
+                </nav>
             </div>
         </footer>
     </body>
